@@ -1,0 +1,99 @@
+/* Full-screen background image */
+body {
+  background: url('../Images/coffee.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centering wrapper */
+.login-wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  position: absolute;
+  top: 14%;
+  right: 33%;
+}
+
+/* Semi-transparent, elegant container */
+.login-container {
+  background-color: rgba(239, 211, 179, 0.92);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Title and tagline */
+.login-container h2 {
+  color: #5a1e1e;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.login-container h2 i {
+  color: #8b3e3e;
+  margin-right: 8px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #7b2e2e;
+  margin-bottom: 30px;
+}
+
+/* Labels and input styles */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #5b2c2c;
+  margin-bottom: 5px;
+}
+
+label i {
+  margin-right: 5px;
+  color: #aa5656;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d9a0a0;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fffdfd;
+}
+
+/* Styled button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #bb8888;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button i {
+  margin-right: 6px;
+}
+
+button:hover {
+  background-color: #a66a6a;
+}

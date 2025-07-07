@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title>Kaffa Coffee Roaster</title>
+
+    <link rel="stylesheet" href="css/kaffa.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+       <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+   
+    </nav>
+  </header>
+
+
+<div class="container">
+    <h1><i>...Kaffa Coffee Roasters...</i></h1>
+
+     <!-- Carousel Section -->
+     <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('Images/kaffa.jpeg');"></div>
+      <div class="slide" style="background-image: url('Images/kaffaa2.jfif');"></div>
+      <div class="slide" style="background-image: url('Images/kaffa.jpeg');"></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="moveToSlide(0)"></span>
+      <span class="dot" onclick="moveToSlide(1)"></span>
+      <span class="dot" onclick="moveToSlide(2)"></span>
+    </div>
+  </div>
+
+  <h2><li>Key Features and Highlights:</li></h2>
+    
+    <h4><li>Atmosphere & Ambience:</li></h4>
+      Kaffa is known for its clean, minimalist interior with earthy tones, making it a serene and cozy space for coffee lovers.
+Kaffa on Sindhu Bhavan Road is praised for its attractive and inviting atmosphere, making it a great place to relax or catch up with friends.
+
+<h4><li>Cuisine:</li></h4>
+Ideal for coffee enthusiasts seeking variety—espresso, cold brew, Vietnamese, plus beans to take home.
+
+<h4><li>Recommended Dishes:</li></h4>
+   <ul>
+<li>Freshly roasted specialty coffees — from espresso to Vietnamese brew, cold brew, and manual pour-overs</li>
+<li>Signature sandwiches: BBQ paneer, grilled mushroom, caprese, falafel pita</li>
+<li>A wide international café menu including breakfast items, sandwiches (BBQ, mushroom, caprese), bagels, croissants, waffles, and smoothie bowls.</li> 
+   </ul>
+
+<h4><li>Location:</li></h4>
+  <a class="location-link" href="https://www.google.com/maps/place/Kaffa+Coffee+Roasters/@23.0308,72.5649,17z">
+   Ground Floor, Opp. Atira, Near Apang Manav Mandal, DR-Vikram-Sarabhai Marg (IIM Road), Vastrapur/Navrangpura area, Ahmedabad, Gujarat 380051, India
+  </a>
+
+  <h4><li>Ratings & Reviews:</li></h4>
+ <ul>
+<li>Google-Average rating of 4.3/5 based on user reviews </li>
+<li>Zomato-Dining rating of 4.2/5 (465 ratings), delivery at 3.9/5</li>
+<li>Tripadvisor-One perfect 5/5 review praising service, food, and ambience—but limited sample size.</li>
+</ul>
+
+<h4><li>Overall:</li></h4>
+Kaffa on Sindhu Bhavan Road is a popular spot for coffee lovers and those looking for a comfortable place to enjoy a meal and relax.
+
+<h4><li>Parking:</li></h4> Provides free parking lot, street parking, and valet parking options.
+
+  <div class="nav-links">
+      <a href="charcoal.html" class="prev"><i class="fas fa-arrow-left"></i> Previous</a>
+      <a href="triton.html" class="next">Next <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p class="copyright">&copy; 2025 Cafess. All rights reserved.</p>
+  </footer>
+
+   <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+
+    const slides = document.getElementById("slides");
+    const dots = document.querySelectorAll(".dot");
+
+    function moveToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>Banjara Cafe</title>
+
+    <link rel="stylesheet" href="css/kaffa.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+          <a href="mainpage.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+   
+    </nav>
+  </header>
+  <div class="container">
+    <h1><i>...Banjara Gourmet Cafe...</i></h1>
+ 
+  <!-- Carousel Section -->
+     <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('Images/banjara.jpg');"></div>
+      <div class="slide" style="background-image: url('Images/banjara1.jfif');"></div>
+      <div class="slide" style="background-image: url('Images/banjara.jpg');"></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="moveToSlide(0)"></span>
+      <span class="dot" onclick="moveToSlide(1)"></span>
+      <span class="dot" onclick="moveToSlide(2)"></span>
+    </div>
+  </div>
+  
+  <h2><li>Key Features and Highlights:</li></h2>
+
+  
+   <h4><li>Atmosphere & Ambience:</li></h4>
+    Banjara Gourmet Cafe embraces a rustic-meets-boho vibe, creating a peaceful and artsy atmosphere. The ambience is rich with natural elements—think wooden furniture, rattan lights, indoor plants, and cane decor, giving it an eco-conscious, grounded look.
+    Stylish and spacious indoor and outdoor setting, often described as romantic or upscale, with live music arrangements. </li>
+
+
+
+  <h4><li>Cuisine:</li></h4>
+All-vegetarian fine-casual dining, featuring Continental, North Indian, Chinese, Oriental, Italian, and desserts.
+
+
+  <h4><li>Recommended Dishes:</li></h4>
+   <ul>
+<li>According to diners and local guides, the must-try vegetarian dishes include:</li>
+<li>Burmese Khao Suey, Manchow soup</li>
+ <li>chilli bao, dim sums, Hong Kong noodles</li>
+<li>Rainbow & Margherita pizzas, carrot halwa cake, cheesecakes</li>
+<li>Dal Bukhara, Kadai Paneer, Tibetan Thukpa soup, cheese croquettes</li>
+</ul>
+
+
+  <h4><li>Location:</li></h4>
+ <a class="location-link" href="https://www.google.com/maps/place/Banjara+Gourmet+Cafe+Ahmedabad/">
+    PRL Colony, Opposite Babul Bagh Party Plot, Sindhu Bhavan Road, Bodakdev, Ahmedabad, Gujarat 380054, India
+  </a></li>
+
+  <h4><li>Ratings & Reviews:</li></h4>
+  <ul>
+<li>Zomato rating:4.1/5 (1,100+ ratings)</li>
+<li>Google:4.5/5 (2000+ reviews)</li>
+</ul>
+
+  <h4><li>Overall:</li></h4>
+    “Banjara Gourmet Café at SBR is a thoughtfully designed, soul-soothing cafe where nature, art, and comfort blend. It’s not just a place to eat—it's a place to unwind and connect.”
+“The place is huge… great ambience… super romantic.”
+
+
+<h4><li>Parking:</li></h4> Provides free parking lot, street parking, and valet parking options.
+
+
+<div class="nav-links">
+  <a href="triton.html" class="prev"><i class="fas fa-arrow-left"></i> Previous</a>
+  <a href="makeba.html" class="next">Next <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p class="copyright">&copy; 2025 Cafess. All rights reserved.</p>
+  </footer>
+ <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+
+    const slides = document.getElementById("slides");
+    const dots = document.querySelectorAll(".dot");
+
+    function moveToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
+  </script>
+  
+</body>
+</html>

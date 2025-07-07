@@ -1,0 +1,121 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #fefbf6;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+        display: flex;
+  flex-direction: column;
+    }
+     main{
+      flex: 1;
+     }
+    
+
+    header {
+      background-color: #5d4037;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .review-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .review-card {
+      display: flex;
+      flex-direction: column;
+
+      height: 150px;
+      background-color: rgb(206, 155, 105);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 40px;
+      margin: 20px;
+      transition: transform 0.2s;
+      flex: 1 1 250px;;
+    }
+
+    .review-card:hover {
+      transform: scale(1.03);
+    }
+
+    .cafe-name {
+      font-weight: bold;
+      color: #4e342e;
+      margin-bottom: 8px;
+    }
+
+    .stars {
+      color: #fbc02d;
+      margin: 5px 0;
+    }
+
+    .review-text {
+      font-style: italic;
+      margin: 10px 0;
+    }
+
+    .user {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+      color: #6d4c41;
+      font-weight: 500;
+    }
+
+    
+    .icon {
+      color: #6d4c41;
+      margin-right: 5px;
+ }
+
+  footer {
+      width: 100%;
+      background-color: #222;
+      color: white;
+      padding: 20px 0px; /* Top-Bottom and Left-Right padding */
+      margin-top: 50px; /* space between content and footer */
+    }
+
+
+
+/* Responsive for Mobiles */
+@media (max-width: 600px) {
+  .review-container {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .review-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .review-text {
+    font-size: 14px;
+  }
+
+  .user {
+    font-size: 14px;
+  }
+}

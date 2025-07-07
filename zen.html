@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>zen cafe</title>
+
+    <link rel="stylesheet" href="css/kaffa.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+       <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+   
+    </nav>
+  </header>
+
+
+<div class="container">
+    <h1><i>...Zen Cafe...</i></h1>
+
+    <!-- Carousel Section -->
+     <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('Images/zen2.jpg');"></div>
+      <div class="slide" style="background-image: url('Images/zen.webp');"></div>
+      <div class="slide" style="background-image: url('Images/zen1.webp');"></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="moveToSlide(0)"></span>
+      <span class="dot" onclick="moveToSlide(1)"></span>
+      <span class="dot" onclick="moveToSlide(2)"></span>
+    </div>
+  </div>
+
+  <h2><li>Key Features and Highlights:</li></h2>
+    
+    <h4><li>Atmosphere & Ambience:</li></h4>
+      Peaceful, creative retreat — calm, verdant, and art‑inspired spaces adjacent to M.F. Husain’s famous underground Gufa gallery — lush and soothing, especially in cooler hours 
+      Relaxed & unassuming — described as “stepping into a painting,” with minimalist décor, natural light, and an aura of focus and ease
+
+      <h4><li>Cuisine:</li></h4>
+      Global comfort fare — thin‑crust pizzas, quesadillas, falafel and mezze, soups, salads, and wraps 
+Fresh‑from‑scratch bakery — carrot/apple‑cinnamon cakes, brownies, lemon pies, fudge brownies and other pastries baked daily 
+
+<h4><li>Recommended Dishes:</li></h4>
+   <ul>
+<li>Cappuccino / Macchiato – widely praised for strength and crema .</li>
+<li>Nachos & Hummus Platter – “nachos are absolutely yum”</li>
+<li>Falafel Wrap / Fiesta Bowl – appreciated healthy, light meals</li> 
+   </ul>
+
+<h4><li>Location:</li></h4>
+  <a class="location-link" href="">
+   University Rd, next to Amdavad ni Gufa, Navrangpura, Ahmedabad 380009
+  </a>
+
+  <h4><li>Ratings & Reviews:</li></h4>
+ <ul>
+<li>Google-Average rating of 4.3/5 based on user reviews </li>
+<li>Zomato-Dining rating of 4.2/5 (465 ratings), delivery at 3.9/5</li>
+<li>Tripadvisor-One perfect 5/5 review praising service, food, and ambience—but limited sample size.</li>
+</ul>
+
+<h4><li>Overall:</li></h4>
+Zen Café delivers a thoughtfully curated cafe experience—rich, aromatic coffee and fresh comfort food served amidst greenery and subdued art‑gallery vibe. It’s ideal for relaxed meetups, solo work sessions, or creative breaks. 
+
+<h4><li>Parking:</li></h4> Provides free parking lot, street parking, and valet parking options.
+
+  <div class="nav-links">
+      <a href="project.html" class="prev"><i class="fas fa-arrow-left"></i> Previous</a>
+      <a href="caffix.html" class="next">Next <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p class="copyright">&copy; 2025 Cafess. All rights reserved.</p>
+  </footer>
+
+   <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+
+    const slides = document.getElementById("slides");
+    const dots = document.querySelectorAll(".dot");
+
+    function moveToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
+  </script>
+</body>
+</html>

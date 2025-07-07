@@ -1,0 +1,110 @@
+<html>
+<head>
+  <title>makeba</title>
+  <link rel="stylesheet" href="css/kaffa.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+<div class="container">
+    <h1><i>...House Of Makeba...</i></h1>
+
+ 
+  <!-- Carousel Section -->
+     <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('Images/makeba.jpg');"></div>
+      <div class="slide" style="background-image: url('Images/makeba1.jpg');"></div>
+      <div class="slide" style="background-image: url('Images/makeba.jpg');"></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="moveToSlide(0)"></span>
+      <span class="dot" onclick="moveToSlide(1)"></span>
+      <span class="dot" onclick="moveToSlide(2)"></span>
+    </div>
+  </div>
+  
+
+<h2><li>Key Features and Highlights:</li></h2>
+
+<h4><li>Atmosphere & Ambience:</li></h4>
+The standout feature of Makeba Cafe at Bhat is its rooftop setting with sweeping views of the skyline and Sardar Patel Ring Road. As the sun sets, the space transforms into a romantic, breezy spot ideal for evening hangouts or dates.Makeba’s decor is a blend of bohemian charm and modern minimalism.
+
+
+<h4><li>Cuisine:</li></h4>
+An all-vegetarian fine-casual restaurant and terrace lounge, serving Indian, Mexican, Italian, Chinese, Continental, and more.
+
+<h4><li>Recommended Dishes:</li></h4>
+<ul>
+<li>Soups & Salads
+Khowsuey Soup: Creamy coconut-based, loaded with toppings—rich and comforting 
+Makeba Energy Bowl: Quinoa, pomegranate, nuts, berries—fresh yet filling 
+Chilli Corn Avocado Salad: A vibrant, tangy mix with avocado, corn, cherry tomatoes—perfect starter</li>
+<li>Noodles, Pizza & Rice 
+Dan Dan or Drunken Noodles: Choose chili-oil spicy or basil-garlic saucy versions
+Veggie Fiesta Pizza: Thin crust topped with fresh veggies—a crowd favorite
+Veg Alfredo Pasta: Creamy and rich—great for comfort food lovers 
+Peri-Peri Cream Cheese Rice Bowl: Zesty and creamy, hits the spicy-savory combo </li>
+</ul>
+
+<h4><li>Location:</li></h4>
+<a class="location-link" href="https://www.google.com/maps/place/House+of+Makeba+Bhat+Circle/">
+    2, Sigma 1, Corporate House, Sindhu Bhavan Road, Opposite Man Party Plot, Bodakdev, Ahmedabad, Gujarat-380054, India
+  </a>
+
+
+<h4><li>Ratings & Reviews:</li></h4>
+  <ul>
+<li>Google-Average rating of 4.3/5 based on user reviews </li>
+<li>Zomato-Dining rating of 4.2/5 (465 ratings), delivery at 3.9/5</li>
+<li>Tripadvisor-One perfect 5/5 review praising service, food, and ambience—but limited sample size.</li>
+</ul>
+
+
+<h4><li>Overall:</li></h4>
+“Makeba Cafe at Bhat Circle offers a picturesque rooftop with cozy, boho-chic decor. With mellow music, soft lighting, and earthy textures, it’s the perfect place to unwind, celebrate, or simply enjoy a night under the stars.”</li>
+
+
+
+<h4><li>Parking:</li></h4> Provides free parking lot, street parking, and valet parking options.</li>
+
+<div class="nav-links">
+  <a href="banjara.html" class="prev"><i class="fas fa-arrow-left"></i> Previous</a>
+  <a href="java.html" class="next">Next <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+
+<footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p class="copyright">&copy; 2025 Cafess. All rights reserved.</p>
+  </footer>
+
+   <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+
+    const slides = document.getElementById("slides");
+    const dots = document.querySelectorAll(".dot");
+
+    function moveToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
+  </script>
+</body>
+</html>
+

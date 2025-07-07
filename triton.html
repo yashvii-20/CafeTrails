@@ -1,0 +1,111 @@
+<html>
+<head>
+  <title>Triton</title>
+  <link rel="stylesheet" href="css/kaffa.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+       <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+   
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1><i>...Triton...</i></h1>
+ 
+  <!-- Carousel Section -->
+     <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('Images/T1\ \(2\).jpeg');"></div>
+      <div class="slide" style="background-image: url('Images/triton1.jfif');"></div>
+      <div class="slide" style="background-image: url('Images/T1\ \(2\).jpeg');"></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="moveToSlide(0)"></span>
+      <span class="dot" onclick="moveToSlide(1)"></span>
+      <span class="dot" onclick="moveToSlide(2)"></span>
+    </div>
+  </div>
+
+  <h2><li>Key Features and Highlights:</li></h2>
+
+  <h4><li>Atmosphere & Ambience:</li></h4>
+Triton Café delivers a modern, vibrant ambience with a design that blends contemporary interiors and subtle luxury. It’s known for being stylish yet approachable, offering a laid-back yet Instagram-friendly setting.
+
+  <h4><li>Cuisine:</li></h4>
+A diverse, all‑vegetarian menu features Asian, North‑Indian, Mexican, Italian, and even Greek‑style dishes.
+Costs are typically around ₹1,100–1,500 for two depending on whether you order lighter bites or a full multi‑cuisine meal .
+The menu spans ~15 online pages, indicating extensive choices .
+
+
+
+<h4><li>Recommended Dishes:</li></h4>
+<ul>
+<li>Asian & Chinese Starters.
+Mushroom Dim Sum – Often praised for its perfection and photogenic appeal.</li>
+<li>Mexican/Continental Bites.
+Loaded Nachos/Tacos – Crisp and colorful, go-to options for a casual bite
+Avocado & Mango Salsa – Fresh, tangy, and perfect with chips</li> 
+<li>Drinks & Mocktails
+Santorini-style Refreshments – Expect photogenic mocktails perfect for pairing with the ambiance </li>
+<li>Desserts & Quick Bites
+Waffles or Cakes – Light, sweet treats to complete the meal
+Ice Cream & Shakes – Locally popular for dessert lovers</li>
+</ul>
+
+<h4><li>Location:</li></h4>
+<a class="location-link" href="https://www.google.com/maps/place/Triton+Cafe+Ahmedabad/">
+    TP‑213, FP‑39, Sur‑88/2/1, near Sindhu Bhavan Road, opposite AUDA Garden & Swastik School, PRL Colony, Bodakdev, Ahmedabad, Gujarat 380054, India
+</a>
+
+
+<h4><li>Ratings & Reviews:</li></h4>
+<ul>
+<li>Restaurant Guru reports a rating of 4.3/5 (based on 1,080+ reviews)</li>
+<li>On Google, it averages 4.3–4.4 stars, while Zomato shows a lower 3.2/5 from around 85 ratings </li>
+<li>Hungrito lists it among “Top 10 Cafes in Ahmedabad 2025”, highlighting its ambiance and “Greece vibes” as perfect for Instagram‑worthy moments</li>
+</ul>
+
+<h4><li>Overall:</li></h4>
+ “Triton Café offers a stylish, chill vibe with a modern café-lounge atmosphere—ideal for those who enjoy classy interiors, calm music, and a place to relax or socialize comfortably.”</li>
+
+
+<h4><li>Parking:</li></h4> Provides free parking lot, street parking, and valet parking options.
+
+
+<div class="nav-links">
+  <a href="kaffa.html" class="prev"><i class="fas fa-arrow-left"></i> Previous</a>
+  <a href="banjara.html" class="next">Next <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p class="copyright">&copy; 2025 Cafess. All rights reserved.</p>
+  </footer>
+
+ <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+
+    const slides = document.getElementById("slides");
+    const dots = document.querySelectorAll(".dot");
+
+    function moveToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K's Charcoal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/Charcoal.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1><i>...K's Charcoal...</i></h1>
+    
+    <!-- Carousel Section -->
+     <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('Images/k\'s\ 1.jpeg');"></div>
+      <div class="slide" style="background-image: url('Images/k\'s\ 2.jpeg');"></div>
+      <div class="slide" style="background-image: url('Images/k\ charcoal3.jpg');"></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="moveToSlide(0)"></span>
+      <span class="dot" onclick="moveToSlide(1)"></span>
+      <span class="dot" onclick="moveToSlide(2)"></span>
+    </div>
+  </div>
+
+    <h2><li>Key Features and Highlights:</li></h2>
+
+    <h4><li>Atmosphere & Ambience:</li></h4>
+    Cozy, trendy, and romantic, making it suitable for various occasions.
+    Dominated by deep charcoal tones, gold accents, and industrial-modern elements.
+    Decorated with lush green plants placed near walls and seating, giving a fresh, organic contrast to the darker tones.
+    
+    <h4><li>Cuisine:</li></h4>
+    Primarily Italian, with a focus on authentic Italian food.
+  
+    <h4><li>Recommended Dishes:</li></h4>
+    <ul>
+      <li>The Truffle Pizza is a highly recommended and frequently mentioned item.</li>
+      <li>Tandoori Broccoli-Charcoal-grilled broccoli with spiced hung curd marinade.</li>
+      <li>Paneer Tikka - Soft cottage cheese cubes marinated in spices and grilled over charcoal.</li>
+    </ul>
+
+    <h4><li>Location:</li></h4>
+    <a class="location-link" href="https://www.google.com/maps/place/K's+Charcoal,+Bodakdev,+Ahmedabad/">
+       K's Charcoal, near Indian Oil Petrol Pump, Sindhu Bhavan Road, Bodakdev, Ahmedabad, Gujarat 380054, India 
+    </a>
+
+    <h4><li>Ratings & Reviews:</li></h4>
+    <ul>
+      <li>Google: 4.2 / 5 (1,427 reviews)</li>
+      <li>Tripadvisor (Ahmedabad): 4.5 / 5 from just 3 reviews</li> 
+      <li>Zomato: 3.1 / 5 (141 dining reviews)</li>
+    </ul>
+
+    <h4><li>Overall:</li></h4>
+    <p>"K's Charcoal is a beautifully designed restaurant offering a classy ambience and a well-crafted menu. Ideal for special occasions, it shines in aesthetics and presentation, though it may not satisfy every palate or price-sensitive diner."</p>
+  
+    <h4><li>Parking:</li></h4>
+    <p>Provides free parking lot, street parking, and valet parking options.</p>
+
+    <div class="nav-links">
+      <a href="kaffa.html" class="next">Next <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p class="copyright">&copy; 2025 Cafess. All rights reserved.</p>
+  </footer>
+
+   <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+
+    const slides = document.getElementById("slides");
+    const dots = document.querySelectorAll(".dot");
+
+    function moveToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Cafe Feedback Form</title>
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+  <div class="nav-link">
+  <a href="mainpage.html">Home<i class="fa-solid fa-house-chimney"></i> </a>
+</div>
+
+  <form class="feedback-form" action="submitted.html" method="post">
+    <h2>Cafe Feedback</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="cafe">Cafe Visited:</label>
+    <select id="cafe" name="cafe">
+      <option value="kaffa">Kaffa Coffee Roasters</option>
+      <option value="makeba">House of Makeba</option>
+      <option value="triton">Triton Cafe</option>
+      <option value="kscharcoal">K's Charcoal</option>
+      <option value="banjara">Banjara Gourmet Cafe</option>
+    </select>
+
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating">
+      <option value="5">Excellent</option>
+      <option value="4"> Good</option>
+      <option value="3">Average</option>
+      <option value="2"> Poor</option>
+      <option value="1"> Bad</option>
+    </select>
+
+    <label for="comments">Your Feedback:</label>
+    <textarea id="comments" name="comments" placeholder="Share your experience..."></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+</body>
+</html>
